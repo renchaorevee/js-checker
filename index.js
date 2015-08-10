@@ -17,3 +17,14 @@
         return (typeof input === type.toLowerCase());
     }
 });
+
+/**
+ * Check Truthy, Falsy
+ */
+exports.isTruthy = function(input) {
+    return Boolean(input) === true;
+};
+
+exports.isFalsy = function(input) {
+    return Boolean(input) === false;
+};
